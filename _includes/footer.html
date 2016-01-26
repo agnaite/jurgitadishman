@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default navbar-fixed-bottom footer">
+  <div class="container">
+  	<a href="#"><span class="glyphicon glyphicon-menu-up back-to-top" style="display:none;" aria-hidden="true"></span></a>
+  </div>
+</nav>
+
+<!-- Loading in some scripts here -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+ 
+	$(document).ready(function() {	
+		var offset = 250;
+		var duration = 300;
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > offset) {
+				$('.back-to-top').fadeIn(duration);
+
+			} else {
+				$('.back-to-top').fadeOut(duration);	 
+			}
+		});
+		 		 
+		$('.back-to-top').click(function(event) {
+			event.preventDefault();
+			$('html, body').animate({scrollTop: 0}, duration);	 
+			return false;
+		})
+
+	$(function(){
+	    var current = location.pathname;
+	    console.log(current);
+	    if(current=="/buy.html") {
+	    	$("#buy").addClass("active");
+	    }
+	    if(current=="/about.html") {
+	    	$("#about").addClass("active");
+	    }
+	    if(current=="/portfolio_animals.html" || current=="/portfolio_people.html"  || current=="/portfolio_nature.html" || current=="/portfolio_popart.html") {
+	    	$("#art").addClass("active");
+	    }
+	})
+	 
+});
+ 
+</script>
+
