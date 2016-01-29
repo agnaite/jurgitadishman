@@ -18,9 +18,7 @@ None of these variable are being imported anywhere, they're just here for your c
 body {
   margin: 0;
   background-color: #F9F9F9;
-  padding-bottom: 40px;
-  /*	font-family: 'Arimo', sans-serif;
-  */ }
+  padding-bottom: 40px; }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -41,7 +39,7 @@ body {
 .navbar {
   background-color: transparent;
   border: none;
-  width: 75%;
+  width: 80%;
   margin: 10px auto;
   /*.open > a, .nav .open > a:hover,
   .nav .open > a:focus {
@@ -101,6 +99,19 @@ body {
     #buy-text {
       width: 100%; } }
 
+.buy-img {
+  text-align: center;
+  padding-top: 60px; }
+  .buy-img img {
+    width: 350px;
+    margin: 10px;
+    border: 10px solid white; }
+  @media screen and (max-width: 520px) {
+    .buy-img {
+      text-align: left;
+      position: absolute;
+      left: 0; } }
+
 .about-wrap {
   width: 90%; }
   @media screen and (max-width: 520px) {
@@ -108,24 +119,49 @@ body {
       width: 100%;
       padding: 0;
       margin: 0; } }
-  .about-wrap #about-text {
-    text-align: justify; }
-  .about-wrap .img-wrap {
-    margin-top: 60px; }
+
+.work {
+  margin-top: 80px;
+  width: 100%; }
+  .work p {
+    font-size: 20px; }
+  @media screen and (max-width: 520px) {
+    .work {
+      padding: 3px 0;
+      margin-top: 30px; }
+      .work p {
+        font-size: 16px; } }
+
+.exhibits {
+  width: 100%; }
+  .exhibits p {
+    font-size: 20px; }
+  @media screen and (max-width: 520px) {
+    .exhibits {
+      padding: 3px 0;
+      margin-top: 10px; }
+      .exhibits p {
+        font-size: 16px; } }
+
+#about-text {
+  text-align: justify; }
+
+.img-wrap {
+  margin-top: 60px; }
+  @media screen and (max-width: 520px) {
+    .img-wrap {
+      margin-top: 20px; } }
+  .img-wrap #about-pic {
+    width: 110%;
+    display: block;
+    margin-top: 50px;
+    margin-left: 100px;
+    opacity: 0.75;
+    border-radius: 100%; }
     @media screen and (max-width: 520px) {
-      .about-wrap .img-wrap {
-        margin-top: 20px; } }
-    .about-wrap .img-wrap #about-pic {
-      width: 110%;
-      display: block;
-      margin-top: 50px;
-      margin-left: 80px;
-      opacity: 0.75;
-      border-radius: 100%; }
-      @media screen and (max-width: 520px) {
-        .about-wrap .img-wrap #about-pic {
-          margin: 0 auto;
-          width: 60%; } }
+      .img-wrap #about-pic {
+        margin: 0 auto;
+        width: 60%; } }
 
 #buy-text,
 #about-text {
