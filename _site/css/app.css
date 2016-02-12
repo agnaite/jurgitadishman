@@ -5,7 +5,6 @@ None of these variable are being imported anywhere, they're just here for your c
 */
 * {
   padding: 0;
-  /* Standard Reset, and we're adding box-sizing:border-box because it's awesome. */
   margin: 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -40,11 +39,7 @@ body {
   background-color: transparent;
   border: none;
   width: 80%;
-  margin: 10px auto;
-  /*.open > a, .nav .open > a:hover,
-  .nav .open > a:focus {
-  		background-color: $bgr-color;
-  }*/ }
+  margin: 10px auto; }
   @media screen and (max-width: 520px) {
     .navbar {
       width: 100%; } }
@@ -83,7 +78,7 @@ body {
       padding-right: 15px; } }
 
 #cover-photo {
-  width: 85%;
+  width: 90%;
   border: 15px solid white;
   display: block;
   margin: 0 auto;
@@ -113,7 +108,8 @@ body {
       left: 0; } }
 
 .about-wrap {
-  width: 90%; }
+  width: 90%;
+  padding-top: 40px; }
   @media screen and (max-width: 520px) {
     .about-wrap {
       width: 100%;
@@ -132,16 +128,33 @@ body {
       .work p {
         font-size: 16px; } }
 
+.exhibits-container {
+  display: block;
+  padding-top: 60px; }
+
 .exhibits {
+  margin-top: 30px;
   width: 100%; }
   .exhibits p {
     font-size: 20px; }
   @media screen and (max-width: 520px) {
     .exhibits {
       padding: 3px 0;
-      margin-top: 10px; }
+      margin-top: 40px; }
       .exhibits p {
         font-size: 16px; } }
+
+.carousel {
+  border: 10px solid white;
+  width: 75%;
+  margin: 0 auto; }
+  .carousel .carousel-inner .item {
+    max-height: 600px; }
+  @media screen and (max-width: 520px) {
+    .carousel {
+      width: 100%; }
+      .carousel .carousel-inner .item {
+        max-height: 340px; } }
 
 #about-text {
   text-align: justify; }
@@ -188,6 +201,9 @@ body {
 .portfolio {
   padding-top: 50px;
   padding-left: 100px; }
+  @media screen and (max-width: 720px) {
+    .portfolio {
+      padding-left: 50px; } }
   @media screen and (max-width: 520px) {
     .portfolio {
       padding-left: 15px;
@@ -200,9 +216,12 @@ body {
     -moz-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
     width: 500px; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 520px) {
       .media-left .media-object {
-        width: 280px; } }
+        width: 380px; } }
+    @media screen and (max-width: 420px) {
+      .media-left .media-object {
+        width: 300px; } }
     @media screen and (max-width: 320px) {
       .media-left .media-object {
         width: 200px; } }
