@@ -69,6 +69,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li id="about"><a href="about.html">About</a></li>
         <li id="buy"><a href="buy.html">Buy</a></li>
+        <li id="exhibits"><a href="exhibitions.html">Exhibitions</a></li>
         <li id="art" class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Art <span id="caret" class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -90,6 +91,23 @@
 				
 		<div class="container">
 	<div class="media portfolio">
+
+	<div class="media-left">
+	    <a href="img/people/h24.jpg">
+	    	<div class="ribbon-container">
+     			<span id="ribbon-new">NEW</span>
+  		 	</div>
+	      <img class="media-object" src="img/people/h24.jpg" alt="...">
+	    </a>
+	  </div>
+	  <div class="media-body">
+	    <h4 class="media-heading">Adorable</h4>
+	    36 x 36<br>
+	    Acrylic on canvas<br>
+	    $1,400
+	</div>
+	  </br>
+
 	<div class="media-left">
 	    <a href="img/people/h23.jpg">
 	    	<div class="ribbon-container">
@@ -105,6 +123,7 @@
 	    $1,400
 	  </div>
 	  </br>
+
 	<div class="media-left">
 	    <a href="img/people/h22.jpg">
 	    	<div class="ribbon-container">
@@ -138,7 +157,7 @@
 	  <div class="media-left">
 	    <a href="img/people/h19.jpg">
 	    	<div class="ribbon-container">
-     			<span id="ribbon-new">NEW</span>
+     			<span id="ribbon-sold">SOLD</span>
   		 	</div>
 	      <img class="media-object" src="img/people/h19.jpg" alt="...">
 	    </a>
@@ -409,6 +428,9 @@
 	    }
 	    if(current=="/about.html") {
 	    	$("#about").addClass("active");
+	    }
+	    if(current=="/exhibitions.html") {
+	    	$("#exhibits").addClass("active");
 	    }
 	    if(current=="/portfolio_animals.html" || current=="/portfolio_people.html"  || current=="/portfolio_nature.html" || current=="/portfolio_popart.html") {
 	    	$("#art").addClass("active");
