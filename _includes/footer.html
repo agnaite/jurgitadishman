@@ -8,8 +8,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
- 
-	$(document).ready(function() {	
+
+	$(document).ready(function() {
 		var offset = 250;
 		var duration = 300;
 		$(window).scroll(function() {
@@ -17,13 +17,13 @@
 				$('.back-to-top').fadeIn(duration);
 
 			} else {
-				$('.back-to-top').fadeOut(duration);	 
+				$('.back-to-top').fadeOut(duration);
 			}
 		});
-		 		 
+
 		$('.back-to-top').click(function(event) {
 			event.preventDefault();
-			$('html, body').animate({scrollTop: 0}, duration);	 
+			$('html, body').animate({scrollTop: 0}, duration);
 			return false;
 		})
 
@@ -45,7 +45,7 @@
 	});
 
 });
- 
+
 </script>
 
 <script>
@@ -58,3 +58,5 @@
   ga('send', 'pageview');
 
 </script>
+</body>
+</html>
