@@ -52,45 +52,41 @@
 	
 	<body>
 
-	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1404.42">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.0px; font: 11.0px '.AppleSystemUIFont'; color: #000000; -webkit-text-stroke: #000000}
-    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee}
-    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000ee}
-    span.s1 {font-kerning: none; background-color: #c0c0c0}
-    span.s2 {font: 12.0px Times; text-decoration: underline ; font-kerning: none; color: #0000ee; background-color: transparent; -webkit-text-stroke: 0px #0000ee}
-    span.s3 {font: 12.0px Times; font-kerning: none}
-    span.s4 {-webkit-text-stroke: 0px #000000}
-    span.s5 {text-decoration: underline ; font-kerning: none}
-    span.s6 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000ee}
-    ul.ul1 {list-style-type: disc}
-    ul.ul2 {list-style-type: circle}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">Toggle navigation <a href="/index.html"><span class="s2">Jurgita Dishman</span></a></span><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-<ul class="ul1">
-  <li class="li2"><span class="s4"><a href="/about.html"><span class="s5">About</span></a></span></li>
-  <li class="li3"><a href="/buy.html"><span class="s6">Buy</span></a></li>
-  <li class="li2"><span class="s4"><a href="/exhibitions.html"><span class="s5">Exhibitions</span></a></span></li>
-  <li class="li2"><span class="s4"></span><span class="s5">Art</span></li>
-  <ul class="ul2">
-    <li class="li2"><span class="s4"><a href="/portfolio_animals.html"><span class="s5">Animals</span></a></span></li>
-    <li class="li2"><span class="s4"><a href="/portfolio_nature.html"><span class="s5">Nature</span></a></span></li>
-    <li class="li2"><span class="s4"><a href="/portfolio_nudes.html"><span class="s5">Nudes</span></a></span></li>
-    <li class="li2"><span class="s4"><a href="/portfolio_people.html"><span class="s5">People</span></a></span></li>
-    <li class="li2"><span class="s4"><a href="/portfolio_popart.html"><span class="s5">Pop Art</span></a></span></li>
-  </ul>
-</ul>
-</body>
-</html>
+	<body>
+
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Jurgita Dishman</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="about"><a href="about.html">About</a></li>
+        <li id="buy"><a href="buy.html">Buy</a></li>
+        <li id="exhibits"><a href="exhibitions.html">Exhibitions</a></li>
+        <li id="art" class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Art <span id="caret" class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="portfolio_animals.html">Animals</a></li>
+            <li><a href="portfolio_nature.html">Nature</a></li>
+            <li><a href="portfolio_nudes.html">Nudes</a></li>
+            <li><a href="portfolio_people.html">People</a></li>
+            <li><a href="portfolio_popart.html">Pop Art</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
 		<!--[if lt IE 8]>
@@ -124,8 +120,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
- 
-	$(document).ready(function() {	
+
+	$(document).ready(function() {
 		var offset = 250;
 		var duration = 300;
 		$(window).scroll(function() {
@@ -133,13 +129,13 @@
 				$('.back-to-top').fadeIn(duration);
 
 			} else {
-				$('.back-to-top').fadeOut(duration);	 
+				$('.back-to-top').fadeOut(duration);
 			}
 		});
-		 		 
+
 		$('.back-to-top').click(function(event) {
 			event.preventDefault();
-			$('html, body').animate({scrollTop: 0}, duration);	 
+			$('html, body').animate({scrollTop: 0}, duration);
 			return false;
 		})
 
@@ -161,7 +157,7 @@
 	});
 
 });
- 
+
 </script>
 
 <script>
@@ -174,6 +170,8 @@
   ga('send', 'pageview');
 
 </script>
+</body>
+</html>
 
 	</body>
 </html>
