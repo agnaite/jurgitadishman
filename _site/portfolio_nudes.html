@@ -89,10 +89,6 @@
 </nav>
 
 
-		<!--[if lt IE 8]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-				
 		<!-- "Indiscretion "
 40x40
 Price 850$  -->
@@ -161,11 +157,10 @@ Price 850$  -->
 </nav>
 
 <!-- Loading in some scripts here -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/templating.js"></script>
-<script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
 
 	$(document).ready(function() {
 		var offset = 250;
@@ -204,6 +199,22 @@ Price 850$  -->
 
 });
 
+</script>
+<script src="js/templating.js"></script>
+<script id="exhibit-carousel-img" type="text/x-handlebars-template">
+    
+
+      <div class="item active">
+            <img src="img/exhibits/1.jpg">
+        </div>
+
+      {{#times 40}}
+        <div class="item">
+            <img src="img/exhibits/{{ this }}.jpg">
+        </div>
+      {{/times}}
+
+    
 </script>
 
 <script>
