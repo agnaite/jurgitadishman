@@ -7,8 +7,8 @@ $(function () {
 
   Handlebars.registerHelper('times', function(n, block) {
     var accum = '';
-    for(var i = 2; i<n; i++)
-        accum += block.fn(i);
+    for(var i=2; i<n; i++)
+        if (i !== 23) { accum += block.fn(i); }
     return accum;
   });
 
