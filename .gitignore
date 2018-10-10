@@ -1,4 +1,6 @@
 _site
-img
+img/*
 .sass-cache
 .jekyll-metadata
+.DS_Store
+notes.txt

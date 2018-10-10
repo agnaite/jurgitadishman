@@ -4,7 +4,7 @@ $(function () {
 
   Handlebars.registerHelper('times', function(n, block) {
     var accum = '';
-    for(var i=52; i>0; i--)
+    for(var i=54; i>0; i--)
         if (i !== 23) { accum += block.fn(i); }
     return accum;
   });
